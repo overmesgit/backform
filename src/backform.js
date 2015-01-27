@@ -238,7 +238,7 @@
 
   var SpacerControl = Backform.SpacerControl = Control.extend({
     template: _.template([
-      '<label class="<%=Backform.controlLabelClassName%>">&nbsp;</label>',
+      '<label class="<%=Backform.controlLabelClassName%>"></label>',
       '<div class="<%=Backform.controlsClassName%>"></div>'
     ].join("\n"))
   });
