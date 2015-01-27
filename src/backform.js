@@ -68,7 +68,10 @@
         options.fields = new Fields(options.fields || this.fields);
       this.fields = options.fields;
       this.model.errorModel = options.errorModel || this.model.errorModel || new Backbone.Model();
+      this.onInit();
     },
+    onInit: function () {},
+    onRender: function () {},
     render: function() {
       this.$el.empty();
 
@@ -83,7 +86,7 @@
         });
         $form.append(control.render().$el);
       });
-
+      this.onRender();
       return this;
     }
   });
