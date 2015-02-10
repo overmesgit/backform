@@ -1,13 +1,4 @@
-/*
-  Backform
-  http://github.com/amiliaapp/backform
-
-  Copyright (c) 2014 Amilia Inc.
-  Written by Martin Drapeau
-  Licensed under the MIT @license
- */
-(function() {
-
+require(['backbone'], function(Backbone) {
   // Backform namespace and global options
   Backform = {
     // HTML markup global class names. More can be added by individual controls
@@ -426,4 +417,4 @@
     buttonStatusSuccessClassname: "text-success"
   });
 
-}).call(this);
+});
