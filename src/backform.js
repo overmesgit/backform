@@ -1,4 +1,4 @@
-require(['backbone'], function(Backbone) {
+define(['backbone'], function(Backbone) {
   // Backform namespace and global options
   Backform = {
     // HTML markup global class names. More can be added by individual controls
@@ -416,5 +416,5 @@ require(['backbone'], function(Backbone) {
     buttonStatusErrorClassName: "text-danger",
     buttonStatusSuccessClassname: "text-success"
   });
-
+  return Backform;
 });
